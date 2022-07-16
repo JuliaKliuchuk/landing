@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/style.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__content" id="headerContent">
+      <a href="#" class="header__content__logo" title="LoremIpsum.Net">
+        LoremIpsum.<span>Net</span>
+      </a>
+
+      <nav class="header__content__navigation" id="nav">
+        <ul>
+          <li><a href="#banner">Бизнес</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#price">Цены</a></li>
+          <li><a href="#order">Оформить заказ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__content__mob-menu">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about"></section>
+  <section id="price"></section>
+
+  <section class="banner" id="banner">
+    <div class="banner__content">
+      <h1><span>Lorem ipsum </span> dolor sit <br> amet consectetur <span>adipiscing</span></h1>
+
+      <h4>At vero eos et accusamus et iusto odio dignissimos ducimus!</h4>
+
+      <ul class="banner__content__list">
+        <li>Totam rem aperiam eaque ipsa</li>
+        <li>Sit voluptatem accusantium doloremque laudantium</li>
+        <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+      </ul>
+
+      <div class="banner__content__button">
+        <button class="button button__active">заказать</button>
+        <button class="button button__default">подробнее</button>
+      </div>
+
+    </div>
+  </section>
+
+  <main>
+    <section class="order" id="order">
+      <div class="order__content">
+        <p class="order__content__header">Оформление <span> Заказа </span></p>
+        <p class="order__content__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+
+        <div class="order__content__roadmap">
+
+          <p>
+            <img src="assets/search.svg" alt="search">
+            Lorem ipsum dolor sit amet
+          </p>
+
+          <p class="dotted-line">
+            <img src="assets/dotted_line.svg" alt="dotted_line">
+          </p>
+
+          <p>
+            <img src="assets/percent.svg" alt="percent">
+            Сonsecteturadipiscing elit
+          </p>
+
+          <p class="dotted-line">
+            <img src="assets/dotted_line.svg" alt="dotted_line">
+          </p>
+
+          <p>
+            <img src="assets/document.svg" alt="document">
+            Sed do eiusmod tempor
+          </p>
+
+          <p class="dotted-line">
+            <img src="assets/dotted_line.svg" alt="dotted_line">
+          </p>
+
+          <p>
+            <img src="assets/email_.svg" alt="email_">
+            Esse cillum dolore eu fugiat
+          </p>
+
+          <p class="dotted-line">
+            <img src="assets/dotted_line.svg" alt="dotted_line">
+          </p>
+
+          <p>
+            <img src="assets/money.svg" alt="money">
+            Excepteur sint occaecat cupidatat non proident
+          </p>
+
+        </div>
+
+        <form class="order__content__form" name="orderForm">
+
+          <select name="systemType" class="order__content__form__system-type">
+            <option disabled selected>Выберите тип системы </option>
+            <option value="1">Sed ut perspiciatis</option>
+            <option value="2">Nemo enim ipsam</option>
+            <option value="3">Et harum quidem</option>
+            <option value="4">Temporibus autem</option>
+            <option value="5">Itaque earum rerum</option>
+          </select>
+
+          <input type="text" name="userEmail" placeholder="Ваш e-mail" class="order__content__form__email">
+
+          <input type="text" name="userName" placeholder="Ваше имя" class="order__content__form__name">
+
+          <div class="order__content__form__range">
+            <div class="range-info">
+              <p class="range-info__label">Sed ut perspiciatis, unde omnis iste natus</p>
+              <p class="range-info__value">75 %</p>
+            </div>
+            <input type="range" name="range" min="0" max="100" step="1" value="75">
+          </div>
+
+          <div class="order__content__form__upload-file">
+            <input type="file" name="file" id="upload-file__input" class="upload-file__input"
+              accept=".png,.doc, .docx, .xls, .xlsx, .txt, .tar, .zip">
+            <label class="upload-file__label" for="upload-file__input">
+              <img src="assets/file.svg" alt="Файл" width="20" height="20">
+              <span class="upload-file__text">Прикрепить файл</span>
+            </label>
+          </div>
+
+          <input type="submit" value="Отправить" class="button button__active order__content__form__submit"
+            onclick="onSubmit(); return false;">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__content__copyright">© 2018 «LoremIpsum.net» Все права защищены.</div>
+      <div class="vertical-line"></div>
+
+      <div class="footer__content__wallet">
+        <p><img src="assets/qiwi_wallet.svg" width="20" height="20" alt="Qiwi wallet">Qiwi wallet</p>
+        <p><img src="assets/yandex_money.svg" width="20" height="20" alt="Yandex Money">Yandex Money</p>
+        <p><img src="assets/web_money.svg" width="20" height="20" alt="Web Money">Web Money</p>
+      </div>
+      <div class="vertical-line"></div>
+
+      <div class="footer__content__contact">
+        <p>
+          <a href="#">
+            <img src="assets/email.svg" width="20" height="20" alt="info@ipsum228.com">info@ipsum228.com
+          </a>
+        </p>
+
+        <p>
+          <a href="#">
+            <img src="assets/vk.svg" width="20" height="20" alt="Мы вконтакте"> Мы вконтакте
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    jQuery(window).scroll(function () {
+      var $sections = $('section');
+      $sections.each(function (i, el) {
+        var top = $(el).offset().top - 100;
+        var bottom = top + $(el).height();
+        var scroll = $(window).scrollTop();
+        var id = $(el).attr('id');
+        if (scroll > top && scroll < bottom) {
+          $('a.active').removeClass('active');
+          $('a[href="#' + id + '"]').addClass('active');
+
+        }
+      })
+    });
+
+    $("nav").on("click", "a", function (event) {
+      // исключаем стандартную реакцию браузера
+      event.preventDefault();
+
+      // получем идентификатор блока из атрибута href
+      var id = $(this).attr('href'),
+
+        // находим высоту, на которой расположен блок
+        top = $(id).offset().top;
+
+      // анимируем переход к блоку, время: 800 мс
+      $('body,html').animate({ scrollTop: top }, 800);
+    });
+  </script>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav");
+      if (x.className === "header__content__navigation") {
+        x.className += " responsive";
+      } else {
+        x.className = "header__content__navigation";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
