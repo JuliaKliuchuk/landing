@@ -1,2 +1,2 @@
-
-test task for SoftCorp
+# DEMO
+https://juliakliuchuk.github.io/landing/index.html
