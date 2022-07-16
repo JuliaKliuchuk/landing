@@ -1,2 +1,2 @@
-# landing
-# test task for SoftCorp
+
+test task for SoftCorp
