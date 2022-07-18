@@ -151,7 +151,7 @@ section.price {
 }
 
 section.banner {
-  background-color: #c78b3c;
+  background-color: #000000;
   background-image: url("../assets/banner_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -348,7 +348,9 @@ main .order .order__content .order__content__roadmap p.dotted-line {
 
 main .order .order__content .order__content__form {
   display: grid;
-  grid-template-areas: 'select email name' 'range range addFile' 'submit submit submit';
+  grid-template-areas: 'select email name'
+ 'range range addFile'
+ 'submit submit submit';
   gap: 15px;
   width: 100%;
   align-items: center;
@@ -705,7 +707,10 @@ footer.footer .footer__content .footer__content__contact p a img {
     margin: 120px auto 0;
   }
   main .order .order__content .order__content__form {
-    grid-template-areas: 'select email' 'name range' 'addFile .' 'submit submit';
+    grid-template-areas: 'select email'
+ 'name range'
+ 'addFile .'
+ 'submit submit';
     justify-content: center;
     gap: 15px;
   }
@@ -748,7 +753,12 @@ footer.footer .footer__content .footer__content__contact p a img {
     padding: 20px;
   }
   main .order .order__content .order__content__form {
-    grid-template-areas: 'select' 'email' 'name' 'range' 'addFile' 'submit';
+    grid-template-areas: 'select'
+ 'email'
+ 'name'
+ 'range'
+ 'addFile'
+ 'submit';
     justify-content: center;
     gap: 15px;
   }
