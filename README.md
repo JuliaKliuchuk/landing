@@ -1,3 +1,3 @@
+DEMO
 
-
-# landing_lorem_ipsum
+https://juliakliuchuk.github.io/landing/
